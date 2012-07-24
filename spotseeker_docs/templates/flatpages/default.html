@@ -1,0 +1,29 @@
+{% load flatpages %}
+{% get_flatpages as flatpages %}
+<head>
+	<link rel="stylesheet/less" type="text/css" href="{{ STATIC_URL }}/style.less">
+	<script src="{{ STATIC_URL }}/less.min.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" src="//use.typekit.net/kkm4jvx.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+
+<body>
+	<div class="nav">
+		<ol>
+            {% for page in flatpages %}
+            {% if flatpage.url == page.url %}
+			<li class="active-nav {% if page.url == '/' %}home{% endif %}">{{ page.title }}</li>
+            {% else %}
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+		</ol>
+	</div>
+
+	<div class="main">
+        {{ flatpage.content }}
+	</div>
+
+
+</body>

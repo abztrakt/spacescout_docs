@@ -15,4 +15,3 @@ manage.py
 media/
 spotseeker/
 spotseeker.db
-static/

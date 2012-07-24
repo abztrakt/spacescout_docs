@@ -1,0 +1,130 @@
+
+
+//reset
+* { margin: 0; 
+    padding: 0; }
+
+
+body 
+    { 
+        
+        // variables 
+        @purple: #5D5095;
+        @h1: 24px; 
+    
+    
+        //global-level stuff    
+        font-family: sans-serif; 
+        
+        p { 
+            padding-bottom: 10px; 
+        }
+
+        h1 { 
+            font-size: @h1; 
+            margin-bottom: 10px; 
+        }
+        
+        h2 { 
+            font-size: (@h1 - 4); 
+            margin-bottom: 10px; 
+            margin-top: 10px; 
+            }
+    
+        //links
+        a { 
+            color: @purple;  
+            
+        }
+        
+        
+        .nav { 
+    
+            border-top: 20px solid @purple; 
+            border-bottom: 10px solid @purple; 
+            width: 100%; 
+            padding: 0px; 
+            margin: 0px; 
+             
+            a { text-decoration: none; }
+    
+            ol { 
+            
+                height: 41px;
+            
+                li {
+                 
+                    list-style-type: none; 
+                    float: left; 
+                    margin-top: 0; 
+                    width: auto; 
+                    
+                    &.home { 
+                        font-size: 20px; 
+                    }
+                
+                    &.active-nav { 
+                        background: @purple; 
+                        color: white; 
+                        font-weight: bold;
+                        padding: 10px;
+                        height: 21px;
+                        line-height: 25px; 
+                        
+                    }
+                    
+                    a { 
+                        padding: 10px;
+                        height: 41px;
+                        line-height: 41px; 
+
+
+                    }
+                    
+                                        
+                }
+            
+            
+            }
+                    
+
+        }
+
+        .splash { 
+            width: 50%; 
+            margin: 10px auto; 
+            padding-top: 20px;
+            
+            .headline { 
+                font-size: 30px; 
+            }
+            
+        }
+        
+        
+        .main { 
+            width: 70%; 
+            margin: 10px auto; 
+            padding-top: 20px; 
+            
+            dl { 
+            
+                dt { 
+                    font-weight: bold; 
+                }    
+                
+                dd { 
+                    margin-left: 15px; 
+                    margin-bottom: 10px; 
+                }
+            
+            }
+        
+        
+        }
+
+        
+    }
+    
+
+             
