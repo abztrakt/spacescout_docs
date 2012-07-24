@@ -1,0 +1,18 @@
+# compiled files, swap files, system files, etc.
+*.pyc
+*.swp
+.DS_Store
+
+# virtualenv files
+.Python
+/bin/
+/include/
+/lib/
+/lib64/
+
+# django project files added when following the Install-for-developers wiki page
+manage.py
+media/
+spotseeker/
+spotseeker.db
+static/
