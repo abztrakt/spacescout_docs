@@ -15,9 +15,9 @@
 		<ol>
             {% for page in flatpages %}
             {% if flatpage.url == page.url %}
-			<li class="active-nav {% if page.url == '/' %}home{% endif %}">{{ page.title }}</li>
+			<li id="{% if page.url == '/' %}home{% else %}{{ page.url|cut:'/' }}{% endif %}" class="active-nav">{{ page.title }}</li>
             {% else %}
-            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            <li id="{% if page.url == '/' %}home{% else %}{{ page.url|cut:'/' }}{% endif %}"><a href="{{ page.url }}">{{ page.title }}</a></li>
             {% endif %}
             {% endfor %}
 		</ol>
