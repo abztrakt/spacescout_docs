@@ -4,8 +4,10 @@
 	<link rel="stylesheet/less" type="text/css" href="{{ STATIC_URL }}/style.less">
 	<script src="{{ STATIC_URL }}/less.min.js" type="text/javascript"></script>
 	
-	<script type="text/javascript" src="//use.typekit.net/kkm4jvx.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<link rel="stylesheet" href="http://depts.washington.edu/uweb/inc/css/print.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="http://depts.washington.edu/uweb/inc/css/footer.css" type="text/css" media="screen" />
+
+	
 </head>
 
 <body>
@@ -24,6 +26,28 @@
 	<div class="main">
         {{ flatpage.content }}
 	</div>
+
+    <div id="footerMainNoPatch" class="logoYes wNo">
+        <div id="footerLeft">    	
+            <ul>
+                <li class="logoArea"><a href="//www.washington.edu/" style="background-position: -24px 4px !important;">&#169; 2012 University of Washington</a></li>  
+            </ul>
+        </div>
+        <div id="footerRight">  
+            <ul>
+                <li class="centerText"><a href="//www.seattle.gov/">Seattle, Washington</a></li>
+            </ul>   
+        </div>
+        <div id="footerCenter">
+            <ul>
+                <li><a href="//www.washington.edu/home/siteinfo/form/">Contact Us</a></li>
+                <li class="footerLinkBorder"><a href="//www.washington.edu/jobs/">Jobs</a></li>
+                <li class="footerLinkBorder"><a href="//myuw.washington.edu/">My UW</a></li>
+                <li class="footerLinkBorder"><a href="//www.washington.edu/online/privacy">Privacy</a></li>
+                <li class="footerLinkBorder"><a href="//www.washington.edu/online/terms">Terms</a></li>
+        </ul>
+        </div>
+    </div>
 
 
 </body>
