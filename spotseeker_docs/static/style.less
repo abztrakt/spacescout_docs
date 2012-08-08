@@ -66,12 +66,7 @@ body
                     float: left; 
                     margin-top: 0; 
                     width: auto; 
-                    
-                    &#home { 
-                        font-size: @h1; 
-                        font-weight: bold; 
-                    }
-                
+                                    
                     &.active-nav { 
                         background: @purple; 
                         color: white; 
@@ -95,9 +90,19 @@ body
                         padding: 10px;
                         height: 41px;
                         line-height: 41px; 
-
-
                     }
+                    
+                    &#home { 
+                        font-size: @h1 !important; 
+                        font-weight: bold; 
+                        
+                        a {
+                            font-size: @h1 !important; 
+                            font-weight: bold; 
+
+                        }
+                    }
+
                     
                                         
                 }
